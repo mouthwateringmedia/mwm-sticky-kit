@@ -145,7 +145,7 @@
             if (bottomed && !will_bottom) {
               bottomed = false;
               elm.css({
-                position: "fixed",
+                position: "sticky",
                 bottom: "",
                 top: offset
               }).trigger("sticky_kit:unbottom");
@@ -186,7 +186,7 @@
           if (scroll > top) {
             fixed = true;
             css = {
-              position: "fixed",
+              position: "sticky",
               top: offset
             };
             css.width = elm.css("box-sizing") === "border-box" ? elm.outerWidth() + "px" : elm.width() + "px";

@@ -144,7 +144,7 @@ $.fn.stick_in_parent = (opts={}) ->
             if bottomed && !will_bottom
               bottomed = false
               elm.css({
-                position: "fixed"
+                position: "sticky"
                 bottom: ""
                 top: offset
               }).trigger("sticky_kit:unbottom")
@@ -185,7 +185,7 @@ $.fn.stick_in_parent = (opts={}) ->
           if scroll > top
             fixed = true
             css = {
-              position: "fixed"
+              position: "sticky"
               top: offset
             }
 
